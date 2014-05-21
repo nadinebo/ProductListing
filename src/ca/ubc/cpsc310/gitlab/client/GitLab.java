@@ -51,7 +51,7 @@ public class GitLab implements EntryPoint {
 //=======
 
 	final LoadUsersServiceAsync service = GWT.create(LoadUsersService.class);
-//>>>>>>> refs/remotes/origin/async
+/////>>>>>>> refs/remotes/origin/async
 
 	/**
 	 * This is the entry point method.
