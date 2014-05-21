@@ -1,6 +1,5 @@
 package ca.ubc.cpsc310.gitlab.client;
 
-//<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,12 +45,11 @@ public class GitLab implements EntryPoint {
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
 
-//<<<<<<< HEAD
 	private final FlexTable flexTable = new FlexTable();
-//=======
+	
+	private User finalUser; 
 
 	final LoadUsersServiceAsync service = GWT.create(LoadUsersService.class);
-/////>>>>>>> refs/remotes/origin/async
 
 	/**
 	 * This is the entry point method.
@@ -74,8 +72,6 @@ public class GitLab implements EntryPoint {
 				displayUsers(result);
 				
 			}});
-	
-//<<<<<<< HEAD
 
 		
 	}
@@ -117,7 +113,5 @@ public class GitLab implements EntryPoint {
 			
 			flexTable.setText(i+1,3,String.valueOf(user.getWishList().size()));
 		}
-//=======
-//>>>>>>> refs/remotes/origin/async
 	}
 }
