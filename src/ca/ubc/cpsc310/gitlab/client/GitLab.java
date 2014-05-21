@@ -75,7 +75,7 @@ public class GitLab implements EntryPoint {
 				System.out.println("It works!!!");
 				Window.alert("Successfully loaded the users!");
 				displayUsers(result);
-				
+				lalala;
 			}});
 
 		
