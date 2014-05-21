@@ -47,10 +47,11 @@ public class GitLab implements EntryPoint {
 
 	private final FlexTable flexTable = new FlexTable();
 	
-	private User finalUser; 
+//TODO Ryanna added this	
+	//private User finalUser; 
 
 	final LoadUsersServiceAsync service = GWT.create(LoadUsersService.class);
-
+//TODO Nadine added this
 	private final String finalUser = "2014";
 	/**
 	 * This is the entry point method.
@@ -69,6 +70,9 @@ public class GitLab implements EntryPoint {
 			@Override
 			public void onSuccess(List<IUser> result) {
 				//Window.alert("Got list back with " +  result.size() + " entries");
+				
+				//TODO Nadine added this
+				System.out.println("It works!!!");
 				Window.alert("Successfully loaded the users!");
 				displayUsers(result);
 				
