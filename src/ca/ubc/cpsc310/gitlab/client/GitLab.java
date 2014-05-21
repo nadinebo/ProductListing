@@ -72,10 +72,12 @@ public class GitLab implements EntryPoint {
 				//Window.alert("Got list back with " +  result.size() + " entries");
 				
 				//TODO Nadine added this
-				System.out.println("It works!!!");
+				//System.out.println("It works!!!");
 				Window.alert("Successfully loaded the users!");
 				displayUsers(result);
-				lalala;
+				
+				//TODO Ryanna added this
+				System.out.println("This is weird!! Merge this");
 			}});
 
 		
